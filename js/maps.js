@@ -14,7 +14,7 @@ function renderMap() {
   directionsDisplay.setMap(map);
 }
 
-function calcRoute(latitute, longitude) {
+function calcRoute(latitude, longitude) {
   var request = {
       origin: (latitude + ',' + longitude),
       destination: '-19.920682,-43.920128',
