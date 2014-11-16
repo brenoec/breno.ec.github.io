@@ -110,8 +110,8 @@ a:active {
 }
 
 .menuicon {
-  position: relative;
-  top: 20%;
+  position: fixed;
+  top: 21px;
   right: 4vw;
   float: right;
   width: 44px;
