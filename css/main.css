@@ -41,7 +41,7 @@ a:active {
   color: #fff;
 }
 
-#menu {
+#logo {
   position: fixed;
   top: 0;
   left: 0;
@@ -55,9 +55,19 @@ a:active {
   z-index: 100;
 }
 
-#menu h1 {
+#logo h1 {
   display: inline-block;
   padding-left: 7%;
+}
+
+#menu {
+  background-color: #288888;
+  color: #f2f2f2;
+
+  width: 100%;
+  height: 44px;
+
+  padding-top: 88px;
 }
 
 #menu ul {
@@ -86,12 +96,13 @@ a:active {
 }
 
 #maps {
+  width: 35%;
   min-width: 275px;
   min-height: 250px;
 }
 
 .content {
-  padding-top: 200px;
+  padding-top: 88px;
   padding-left: 7%;
 }
 
@@ -99,12 +110,14 @@ a:active {
   padding-left: 40px;
 }
 
-.right {
-  width: 35%;
-  min-width: 275px;
-  min-height: 250px;
-  padding: 7px;
-  background-color: #244444;
+.menuicon {
+  position: relative;
+  left: 125px;
+  top: 19px;
+  float: left;
+  background-image: url("../img/menu.png");
+  width: 44px;
+  height: 44px;
 }
 
 section#projects {
