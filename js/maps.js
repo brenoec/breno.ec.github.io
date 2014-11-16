@@ -14,7 +14,7 @@ function initialize() {
       };
       map = new google.maps.Map(document.getElementById('maps'), mapOptions);
       directionsDisplay.setMap(map);
-    }
+    });
   } else {
     directionsDisplay = new google.maps.DirectionsRenderer();
     var location = new google.maps.LatLng(-19.920682, -43.920128);
