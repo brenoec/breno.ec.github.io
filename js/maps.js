@@ -43,6 +43,7 @@ function renderGeolocationMap() {
 }
 
 function initialize() {
+  renderMap();
   if ("geolocation" in navigator) {
     renderGeolocationMap();
   } else {
