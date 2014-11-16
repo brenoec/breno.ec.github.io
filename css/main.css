@@ -49,7 +49,7 @@ a:active {
   background-color: #288888;
   color: #f2f2f2;
 
-  width: 100%;
+  width: 100vw;
   height: 88px;
 
   z-index: 100;
@@ -77,10 +77,6 @@ a:active {
   display: inline-block;
   margin: 0;
   padding: 0;
-}
-
-#menu.options {
-  display: inline-block;
 }
 
 #menu > div {
@@ -116,6 +112,7 @@ a:active {
 .menuicon {
   position: relative;
   top: 20%;
+  right: 4vw;
   float: right;
   width: 44px;
   height: 44px;

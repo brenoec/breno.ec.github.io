@@ -1,5 +1,5 @@
 
-if (navigator.userAgent.indexOf('Mobi') === -1) {
+if (navigator.userAgent.indexOf('Mobi') < 0) {
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
