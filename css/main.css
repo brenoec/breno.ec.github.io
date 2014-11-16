@@ -56,6 +56,9 @@ a:active {
 }
 
 #logo h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: inline-block;
   padding-left: 7%;
 }
@@ -112,10 +115,8 @@ a:active {
 
 .menuicon {
   position: relative;
-  left: 125px;
-  top: 19px;
-  float: left;
-  background-image: url("../img/menu.png");
+  top: 20%;
+  float: right;
   width: 44px;
   height: 44px;
 }
