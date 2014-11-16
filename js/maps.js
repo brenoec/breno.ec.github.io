@@ -13,15 +13,12 @@ function initialize() {
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var mapCanvas = document.getElementById('maps');
-      alert("a");
       var mapOptions = {
         center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
         zoom: 17,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
-      alert("b");
       var map = new google.maps.Map(mapCanvas, mapOptions);
-      alert("c");
     });
   } else {
     alert("I'm sorry, but geolocation services are not supported by your browser.");
