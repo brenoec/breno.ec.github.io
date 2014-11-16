@@ -76,6 +76,7 @@ a:active {
   display: inline-block;
   padding-left: 7%;
   padding-bottom: 7px;
+  z-index: 110;
 }
 
 #menu li {
@@ -99,9 +100,9 @@ a:active {
 }
 
 .right {
-  min-width: 300px;
-  width: 40%;
-  min-height: 300px;
+  width: 35%;
+  min-width: 275px;
+  min-height: 250px;
   padding: 7px;
   background-color: #244444;
 }
