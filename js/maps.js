@@ -1,27 +1,27 @@
-function initialize2() {
-  var mapCanvas = document.getElementById('maps');
-  var mapOptions = {
-    center: new google.maps.LatLng(-19.920682, -43.920128),
-    zoom: 17,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions)
-}
-//google.maps.event.addDomListener(window, 'load', initialize);
+
+var directionsDisplay;
+var directionsService = new google.maps.DirectionsService();
+var map;
 
 function initialize() {
   if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var mapCanvas = document.getElementById('maps');
-      var mapOptions = {
-        center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-        zoom: 17,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(mapCanvas, mapOptions);
-    });
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    var location = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var mapOptions = {
+      zoom: 17,
+      center: location
+    };
+    map = new google.maps.Map(document.getElementById('maps'), mapOptions);
+    directionsDisplay.setMap(map);
   } else {
-    alert("I'm sorry, but geolocation services are not supported by your browser.");
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    var location = new google.maps.LatLng(-19.920682, -43.920128);
+    var mapOptions = {
+      zoom: 17,
+      center: location
+    };
+    map = new google.maps.Map(document.getElementById('maps'), mapOptions);
+    directionsDisplay.setMap(map);
   }
 }
 google.maps.event.addDomListener(window, 'load', initialize);
