@@ -1,6 +1,6 @@
 body {
-  background-color: #022222;
-  color: #f2f2f2;
+  background-color: #011111;
+  color: #ddd;
   font-family: 'Sorts Mill Goudy', serif;
 }
 
@@ -13,13 +13,14 @@ section:nth-child(odd) {
   z-index: 10;
 }
 
-.content {
-  padding-top: 140px;
-  padding-left: 7%;
+p {
+  display: inline-block;
+  font-family: serif;
+  font-size: 1.25em;
 }
 
-p {
-  font-size: 1.25em;
+h3 {
+  font-family: serif;
 }
 
 a {
@@ -79,10 +80,19 @@ a:active {
   font-size: 1.50em;
 }
 
+.content {
+  padding-top: 220px;
+  padding-left: 7%;
+}
+
+.padding {
+  padding-left: 7%;
+}
+
 section#projects {
-  background-image: url("../img/backgnd-1.jpg");
+  background-image: url("../img/backgrounds/background-1.jpg");
 }
 
 section#contact {
-  background-image: url("../img/backgnd-5.jpg");
+  background-image: url("../img/backgrounds/background-2.jpg");
 }
