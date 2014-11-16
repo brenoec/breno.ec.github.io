@@ -11,29 +11,19 @@
 
   <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 
-  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-  <!--[if !IE]><!-->
-  <script src="js/main.js"></script>
-  <script src="js/scroll.js"></script>
-  <!--<![endif]-->
   <title>Breno Souza</title>
 </head>
 
 <body>
 
   <div id='menu'>
-    <h1>Breno Souza</h1>
+    <a href="#start"><h1>Breno Souza</h1></a>
 
     <div>
       <div class='options'>
         <ul>
           <li>&bull; <a href="#start">Quem sou eu?</a>&nbsp;&nbsp;</li>
           <li>&bull; <a href="#projects">Projetos</a>&nbsp;&nbsp;</li>
-        </ul>
-      </div>
-      <div class='options'>
-        <ul>
           <li>&bull; <a href="#curriculum">Curriculum Vitae</a>&nbsp;&nbsp;</li>
           <li>&bull; <a href="#contact">Contato</a>&nbsp;&nbsp;</li>
         </ul>
@@ -48,12 +38,26 @@
         <p>
           Atualmente estudante de Engenharia de Computação no Centro Federal de Educação
           Tecnológica de Minas Gerais.
-          <br/>
+          <br/><br/>
           Cursou o ensino fundamental no Centro Pedagógico da Universidade
           Federal de Minas Gerais e no Colégio Técnico da Universidade Federal de
           Minas Gerais.
         </p>
       </div>
+
+      <h2>Livros</h2>
+      <ul>
+        <li>Mulheres, Bukowski</li>
+        <li>Tolkien, qualquer obra</li>
+      </ul>
+
+      <h2>Jogos</h2>
+      <ul>
+        <li>WoW</li>
+        <li>Dustforce</li>
+        <li>Darksiders</li>
+        <li>Thomas was alone</li>
+      </ul>
     </div>
   </section>
 
@@ -66,14 +70,61 @@
   <section id='curriculum'>
     <div class='content'>
       <h1>Curriculum Vitae</h1>
+
+      <p>
+        <a href="files/CurriculumVitae.pdf"><h2>Ver versão completa</h2></a>
+      </p>
+
+      <p>
+        Conhecimentos técnicos:
+        <ul>
+          <li>Linguagens de Programação</li>
+          <li>Desenvolvimento Web</li>
+          <li>Base de Dados SQL</li>
+          <li>Base de Dados NOSQL</li>
+        </ul>
+      </p>
+      <p>
+        Metodologias ágeis:
+        <ul>
+          <li>SCRUM</li>
+        </ul>
+      </p>
+      <p>
+        Experiência de trabalho:
+        <ul>
+          <li>DCSA - CEFET-MG</li>
+          <li>Takenet</li>
+          <li>MAV Tecnologia</li>
+        </ul>
+      </p>
     </div>
   </section>
 
   <section id='contact'>
     <div class='content'>
       <h1>Contato</h1>
+      <div class='right'>
+        <p>
+          <strong>E-mail:</strong> <a href="mailto:breno.ec@gmail.com">breno.ec@gmail.com</a>
+          <br/>
+          <strong>Telefone:</strong> +55 (31) xxxx-xxxx
+        </p>
+        <p>
+          Vamos tomar um café?
+        </p>
+        <div id='maps'></div>
+      </div>
     </div>
   </section>
+
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/maps.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-breno.ec.github.io
+brenoec.github.io
 ==================
 
 Pragramação Web - CEFET-MG: Trabalho Prático 1 -- Página Pessoal
