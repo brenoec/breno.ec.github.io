@@ -145,6 +145,17 @@ a:active {
   height: 18px;
 }
 
+.projectimage {
+  position: relative;
+  height: 44px;
+  z-index: 0;
+  top: 15px;
+}
+
+.project h2 {
+  display: inline-block;
+}
+
 section#start {
   background-image: url("../img/backgrounds/background-1.jpg");
 }
